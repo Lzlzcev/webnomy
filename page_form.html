@@ -14,6 +14,7 @@
 			<input type="password" name="parol" id="parol" placeholder="введите пароль" />
 			<br />
 			
+			<p>Оцените сайт</p>
 			<input type="radio" name="evaluation" value="excellent" id="1" checked="checked" /> <label for="1">Отлично</label> <br />
 			<input type="radio" name="evaluation" value="good" id="2" /> <label for="2">Хорошо</label> <br />
 			<input type="radio" name="evaluation" value="badly" id="3" /> <label for="3">Плохо</label> <br />
@@ -23,6 +24,21 @@
 			<label><input type="checkbox" name="leisure[]" value="watchin">Смотрю ТВ</label> <br />
 			<label><input type="checkbox" name="leisure[]" value="listen">Слушаю музыку</label> <br />
 			<label><input type="checkbox" name="leisure[]" value="walkin">Гуляю</label> <br />
+			
+			<p><label for="multiple">Какую музыку вы слушаете?</label></p>
+			<select name="musicstyles[]" multiple="multiple" size="5" id="multiple">
+				<option value="classic">Классическую</option>
+				<option value="electro">Электро</option>
+				<option value="pop">Поп</option>
+				<option value="rock">Рок</option>
+				<option value="rap">Черную</option>
+			</select>
+		
+			<p><label for="textarea">Ваши интересы</label></p>
+			<textarea name="intresting" rows="4" cols="30" placeholder="Введите сообщение" id="textarea"></textarea> <br />
+			
+			<input type="image" name="send" src="images/send.png" />
+			
 		</form>
 	</body>
 </html>
